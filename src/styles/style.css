@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+  --border-color: #00ff00;
+  --black-color: #000000;
+  --pattern-font: "Merriweather Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: var(--body-bg-color);
+}
+
+div.container {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+}
+
+aside,
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+aside {
+  width: 348px;
+}
+
+main {
+  width: 785px;
+}
+
+div.portfolioBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+}
+
+.portfolioBlockTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+::marker {
+  font-family: var(--pattern-font);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+div.portfolioProfile {
+  align-items: center;
+}
+
+img.portfolioProfileImg {
+  width: 128px;
+  height: 128px;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+h1.portfolioProfileName {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 29px;
+  margin-bottom: 10px;
+}
+
+p.portfolioProfilePosition {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+div.portfolioProfileLinks {
+  gap: 20px;
+}
+
+div.portfolioLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+div.portfolioLink p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+div.portfolioTech {
+  gap: 20px;
+}
+
+div.portfolioTechStacks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+div.portfolioTechStacks p {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: var(--black-color);
+  background: var(--bg-techs);
+  border-radius: 30px;
+  width: 86px;
+  padding: 7px;
+  text-align: center;
+}
+
+div.portfolioLists ul {
+  padding: 20px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+li.portfolioList {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p.portfolioListTitle {
+  font-weight: 700;
+}
+
+div.portfolioMyProjects {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2.portfolioMyProjectsTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+p.portfolioMyProjectsP {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+div.portfolioGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+div.portfolioProjectName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+div.portfolioProjectName p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+p.portfolioProjectDescription {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+div.portfolioProjectDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.portfolioProjectDetailsGrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+div.portfolioProjectDetailsFavs,
+div.portfolioProjectDetailsStack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+div.portfolioPost {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+img.portfolioPostImg {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+h3.portfolioPostDetailsTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 5px;
+}
+
+p.portfolioPostDetailsDate {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 28px;
+}
+
+p.portfolioPostDetailsText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 11px;
+}
+
+div.portfolioPostDetailsGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+div.portfolioPostDetailsGrid p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media only screen and (max-width: 1050px) {
+  div.container {
+    padding: 15px 6px;
+    gap: 30px;
+  }
+
+  aside {
+    width: 30%;
+  }
+
+  main {
+    width: 60%;
+  }
+
+  div.portfolioBlock {
+    padding: 20px;
+  }
+
+  div.portfolioLink {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  img.portfolioLinkImg {
+    width: 19px;
+  }
+
+  div.portfolioLists ul {
+    padding: 20px 0 0 30px;
+  }
+
+  div.portfolioGrid {
+    flex-wrap: wrap;
+  }
+
+  div.portfolioPost {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img.portfolioPostImg {
+    width: 95px;
+    height: 95px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  div.container {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  main,
+  aside {
+    width: 100%;
+  }
+}
